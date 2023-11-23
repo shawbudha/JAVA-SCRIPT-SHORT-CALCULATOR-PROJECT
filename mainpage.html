@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS ASSIGNMENT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   body{
+       padding-top: 100px;
+       padding-left: 100px;
+       padding-right: 100px;
+   }
+     .container{
+        width:150%;
+        height:200%;
+        padding-bottom:10px;
+        text-align: center;
+    }
+      .ist{
+        padding-right:70px;
+        padding-left:70px;
+      }
+        .center {
+         margin: auto;
+         width: 100%;
+         border: 3px solid #73AD21;
+         padding-left: 75px;
+         text-align: center;
+         color: black;
+         background-color: blue;
+         font-size: medium;
+         padding-bottom: 5px;
+         }
+        .center:hover{
+          background-color: yellow ;
+          color: #73AD21;
+          transition: 0.2s;
+        }
+        .result{
+          border: 1px solid #000;
+          text-align: center;
+          font-size: medium;
+          font-weight: bold;
+          font-size: 15px;
+        }
+        form{
+          padding-left: 300px;
+        }
+        .dropdown{
+          min-width:15em;
+          position:relative;
+          margin:2em;
+        }
+        .dropdown *{
+          box-sizing: border-box;
+        }
+        .select{
+          background: black;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          transition: background 0.3s;
+        }
+        @media only screen and (min-width:300px)and(max-width: 800px){ 
+            #middle{
+              display: block;
+             }
+            }     
+</style>
+<script src="code.js"></script>
+</head>
+<body>
+    <div class="center">
+    <h1><b>Java Script Calculator</b></h1>
+    </div>
+    <br/>
+    <div class="container">
+    <table id="middle">
+        <tr>
+          <th class="ist">
+            <label for="No">Number-1:</label><br>
+            <input type="number" placeholder=""/>
+          </th>
+            <th>
+                  <div class="dropdown">
+                    <div class="select">
+                    <span class="selected">Operator</span>
+                    <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                      <li>+</li>
+                      <li>-</li>
+                      <li>*</li>
+                      <li>/</li>                          
+                    </ul>
+                  </div> 
+            </th>        
+            <th class="ist">
+              <label for="No">Number-2:</label><br>
+              <input type="number" placeholder=""/>
+            </th>
+        </tr>
+    </table>
+    </div>
+    <form>
+      <input type="button" onclick="myFunction(this.form)" value="Submit">
+    </form>
+    <br>
+      <form name="test form">
+        <label for="No">RESULT</label><br>
+        <input type="number" name="input box"> 
+      </form>
+</body>
+</html>
